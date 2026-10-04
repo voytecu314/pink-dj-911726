@@ -1,0 +1,46 @@
+#key {
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  opacity: 0.05;
+  z-index: 9998;
+}
+#key:hover { opacity: 0.25; }
+
+.disappear { display: none !important; }
+
+.admin-login-wrapper,
+.admin-edit-wrapper {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 9999;
+  background: #111;
+  color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  font: 14px system-ui, sans-serif;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .35);
+}
+
+.admin-login-wrapper input {
+  display: block;
+  width: 220px;
+  margin-bottom: 8px;
+  padding: 6px 8px;
+}
+
+.admin-login-wrapper button,
+.admin-edit-wrapper button {
+  margin-right: 6px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.admin-edit[contenteditable="true"] {
+  outline: 1px dashed rgba(255, 150, 0, .6);
+  outline-offset: 2px;
+}
